@@ -16,7 +16,7 @@ def choose_game():
         forca.play()
     elif game == 2:
         print("Playing adivinhacao")
-        adivinhacao.jogar()
+        adivinhacao.play()
 
 
 if __name__ == "__main__":

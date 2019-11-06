@@ -7,14 +7,13 @@ def play():
     print("************* Welcome! **********")
     print("*********************************")
 
-    numero_secreto = random.randrange(1,101)
-    attempts = 0
+    secret_number = random.randrange(1, 101)
     score = 1000
 
-    print("Qual nível de dificuldade?")
+    print("Levels:")
     print("(1) Easy (2) Medium (3) Hard")
 
-    level = int(input("Defina o nível: "))
+    level = int(input("Define the level: "))
 
     if level == 1:
         attempts = 20
@@ -23,28 +22,25 @@ def play():
     else:
         attempts = 5
 
-    for rodada in range(1, attempts + 1):
-        print("Tentativa {} de {}".format(rodada, attempts))
+    for round_game in range(1, attempts + 1):
+        print(f"Attempt {round_game} of {attempts}")
 
-        chute_str = input("Digite um número entre 1 e 100: ")
-        print("Você digitou " , chute_str)
-        chute = int(chute_str)
+        guess = int(input("Enter a number between 1 and 100: "))
 
-        if chute < 1 or chute > 100:
-            print("Você deve digitar um número entre 1 e 100!")
+        if guess < 1 or guess > 100:
+            print("You need to enter a number between 1 and 100!")
             continue
 
-        if chute == numero_secreto:
-            print("Você acertou e fez {} pontos!".format(score))
+        if guess == secret_number:
+            print(f"You are right and your score is {score}!")
             break
         else:
-            if chute > numero_secreto:
-                print("Você errou! O seu chute foi maior do que o número secreto.")
-            elif chute < numero_secreto:
-                print("Você errou! O seu chute foi menor do que o número secreto.")
-            score = score - abs(numero_secreto - chute)
-
-    print("End")
+            if guess > secret_number:
+                print("You are wrong! Your shot is greater than the secret number.")
+            elif guess < secret_number:
+                print("You are wrong! Your shot is lesser than the secret number.")
+            score = score - abs(secret_number - guess)
+    print(f"The Secret Number is {secret_number}.")
 
 
 if __name__ == "__main__":

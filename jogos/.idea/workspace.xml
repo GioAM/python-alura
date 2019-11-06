@@ -28,7 +28,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.jogos">
+  <component name="RunManager" selected="Python.adivinhacao">
     <configuration name="adivinhacao" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="jogos" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -94,9 +94,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.adivinhacao" />
         <item itemvalue="Python.jogos" />
         <item itemvalue="Python.forca" />
-        <item itemvalue="Python.adivinhacao" />
       </list>
     </recent_temporary>
   </component>
