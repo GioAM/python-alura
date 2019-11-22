@@ -16,7 +16,7 @@
   </component>
   <component name="ProjectId" id="1TwJVtAZ9tsq8QGPBLech37eHDq" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/jogoteca" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -42,5 +42,16 @@
       <updated>1574365250578</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -1,0 +1,3 @@
+pip3.exe install mysqlclient
+pip3 install flask_mysqldb==0.2.0
+python3 prepara_banco.py
